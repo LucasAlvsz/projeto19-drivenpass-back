@@ -3,7 +3,6 @@ import authService from "@/services/authService"
 import { Request, Response } from "express"
 
 const signUp = async (req: Request, res: Response) => {
-	console.log("w")
 	const { name, email, password }: UserData = req.body
 	await authService.signUp({ name, email, password })
 	res.sendStatus(201)

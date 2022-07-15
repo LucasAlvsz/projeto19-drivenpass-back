@@ -16,7 +16,9 @@ const signIn = async (signInData: SignIn) => {
 	if (!user) throw notFoundError("Invalid email")
 	if (!comparePasswords(signInData.password, user.password))
 		throw unauthorizedError("Invalid password")
-	return { token: generateToken(user) }
+
+	const { id, name } = user
+	return { token: generateToken({ id, name }) }
 }
 
 export default {
