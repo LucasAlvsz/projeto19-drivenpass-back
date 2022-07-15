@@ -6,6 +6,9 @@
 	"scripts": {
 		"dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --exit-child -r tsconfig-paths/register -r dotenv/config src/index.ts"
 	},
+	"prisma": {
+		"seed": "ts-node prisma/seed.ts"
+	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",

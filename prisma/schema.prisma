@@ -9,3 +9,83 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+
+  credentials Credential[]
+  note        Note[]
+  wifi        Wifi[]
+  card        Card[]
+  @@map("users")
+}
+
+model Credential {
+  id        Int      @id @default(autoincrement())
+  title     String   @unique
+  email     String
+  username  String
+  password  String
+  createdAt DateTime @default(now())
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+
+  //TODO put char limit on fields
+
+  @@map("credentials")
+}
+
+model Note {
+  id        Int      @id @default(autoincrement())
+  title     String   @unique
+  content   String
+  createdAt DateTime @default(now())
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+
+  //TODO put char limit on fields
+
+  @@map("notes")
+}
+
+model Card {
+  id         Int       @id @default(autoincrement())
+  title      String    @unique
+  number     String
+  holderName String
+  cvv        String
+  expiryDate String
+  password   String
+  isVirtual  Boolean
+  type       CardTypes
+  createdAt  DateTime  @default(now())
+  userId     Int
+  user       User      @relation(fields: [userId], references: [id])
+
+
+  //TODO put char regex on fields
+
+  @@map("cards")
+}
+
+enum CardTypes {
+  credit
+  debit
+  credit_debit
+}
+
+model Wifi {
+  id        Int      @id @default(autoincrement())
+  title     String   @unique //TODO make this unique or not
+  name      String
+  password  String
+  createdAt DateTime @default(now())
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@map("wifis")
+}
