@@ -5,9 +5,7 @@ const handleError = (
 	req: Request,
 	res: Response,
 	next: NextFunction
-) => {
-	res.status(err.status || 500).send(err.message || "Internal server error")
-}
+) => res.status(err.status || 500).send(err.message || "Internal server error")
 
 interface Error {
 	status: number
