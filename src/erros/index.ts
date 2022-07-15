@@ -19,8 +19,4 @@ const notFoundError = (message: string) => {
 	}
 }
 
-export default {
-	unauthorizedError,
-	conflictError,
-	notFoundError,
-}
+export { unauthorizedError, conflictError, notFoundError }
