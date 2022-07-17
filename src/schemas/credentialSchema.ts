@@ -1,9 +1,11 @@
 import Joi from "joi"
 
-const bodySchema = Joi.object({
+import { CredentialBody } from "@/interfaces/credentialInterfaces"
+
+const bodySchema = Joi.object<CredentialBody>({
+	title: Joi.string().required(),
 	url: Joi.string().uri().required(),
 	username: Joi.string().required(),
-	title: Joi.string().required(),
 	password: Joi.string().required(),
 }).required()
 

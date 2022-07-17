@@ -1,6 +1,7 @@
+import { SignInData } from "@/interfaces/authInterfaces"
 import Joi from "joi"
 
-const bodySchema = Joi.object({
+const bodySchema = Joi.object<SignInData>({
 	email: Joi.string().email().required(),
 	password: Joi.string().required(),
 }).required()

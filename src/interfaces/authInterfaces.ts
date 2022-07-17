@@ -1,5 +1,7 @@
 import { User } from "@prisma/client"
 
-export type UserData = Omit<User, "id" | "createdAt">
+export type SignUpData = Omit<User, "id" | "createdAt">
 
-export type SignIn = Omit<UserData, "name">
+export type SignUpBody = SignUpData & { confirmPassword: string }
+
+export type SignInData = Omit<User, "name" | "id" | "createdAt">

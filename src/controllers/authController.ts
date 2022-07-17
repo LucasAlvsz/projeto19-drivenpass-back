@@ -1,16 +1,16 @@
-import { SignIn, UserData } from "@/interfaces/authInterfaces"
+import { SignInData, SignUpData } from "@/interfaces/authInterfaces"
 import authService from "@/services/authService"
 import { Request, Response } from "express"
 
 const signUp = async (req: Request, res: Response) => {
-	const { name, email, password }: UserData = req.body
-	await authService.signUp({ name, email, password })
+	const signUpData: SignUpData = req.body
+	await authService.signUp(signUpData)
 	res.sendStatus(201)
 }
 
 const signIn = async (req: Request, res: Response) => {
-	const userData: SignIn = req.body
-	const token = await authService.signIn(userData)
+	const signInData: SignInData = req.body
+	const token = await authService.signIn(signInData)
 	res.send(token)
 }
 
