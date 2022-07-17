@@ -1,0 +1,30 @@
+_id: req_4471eb7d2a1c48e59cd1b173d48dc2a7
+type: Request
+parentId: fld_840a8093497d4c078a10a43c2be7401c
+modified: 1658083393606
+created: 1658065872768
+url: "{{ _.URI }}"
+name: Invalid password
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email":"nomes@gmail.com",
+    	"password":"password"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ac9f21769b664841b87d582d1e502372
+authentication: {}
+metaSortKey: -1658062321773
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

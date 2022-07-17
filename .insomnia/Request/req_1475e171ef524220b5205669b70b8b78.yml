@@ -1,0 +1,24 @@
+_id: req_1475e171ef524220b5205669b70b8b78
+type: Request
+parentId: fld_36d2fe33777f499dba3ec75e5cbaba33
+modified: 1658087772381
+created: 1658085553036
+url: "{{ _.URI }}/0"
+name: Invalid id
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: -1658064599423.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

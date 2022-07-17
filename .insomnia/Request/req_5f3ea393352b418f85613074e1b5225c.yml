@@ -1,0 +1,24 @@
+_id: req_5f3ea393352b418f85613074e1b5225c
+type: Request
+parentId: fld_36d2fe33777f499dba3ec75e5cbaba33
+modified: 1658087766460
+created: 1658085553024
+url: "{{ _.URI }}/4"
+name: Card by id
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: -1658064737063.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

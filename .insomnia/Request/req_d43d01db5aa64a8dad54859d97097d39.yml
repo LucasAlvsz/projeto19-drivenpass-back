@@ -1,0 +1,30 @@
+_id: req_d43d01db5aa64a8dad54859d97097d39
+type: Request
+parentId: fld_840a8093497d4c078a10a43c2be7401c
+modified: 1658083392001
+created: 1658064114943
+url: "{{ _.URI }}"
+name: Invalid email
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email":"email@gmail.com",
+    	"password":"{{ _.password }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ac9f21769b664841b87d582d1e502372
+authentication: {}
+metaSortKey: -1658062321823
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,29 @@
+_id: env_e23f2b3df3374fa992771e65f11d7531
+type: Environment
+parentId: env_026ad55987def74a93064b5eb536a186f4e8981e
+modified: 1658091311606
+created: 1658064788351
+name: LocalHost
+data:
+  URI: http://localhost:5000{% request 'folder', '', 0 %}
+  name: "{% faker 'name', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', '', '', '', '', '', '', '', '', '', '', 'en' %}"
+  email: "{% faker 'internet', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    'email', '', '', '', '', '', '', '', '', '', '', _.name, 'pt_BR' %}"
+  password: "{% faker 'internet', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', 'password', '', '', '', '', '', '', '', '', '', '', '', 'pt_BR' %}"
+  token: "{% response 'body', 'req_fbd163446409423c982d4abf7da081be',
+    'b64::JC50b2tlbg==::46b', 'always', 60 %}"
+  url: "{% faker 'internet', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    'url', '', '', '', '', '', '', '', '', '', '', '', 'pt_BR' %}"
+dataPropertyOrder:
+  "&":
+    - URI
+    - name
+    - email
+    - password
+    - token
+    - url
+color: "#5cf4ff"
+isPrivate: false
+metaSortKey: 1658064788351

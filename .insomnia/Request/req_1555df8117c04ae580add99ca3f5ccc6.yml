@@ -1,0 +1,34 @@
+_id: req_1555df8117c04ae580add99ca3f5ccc6
+type: Request
+parentId: fld_4a3c5a2313454576ab4a7e4a67ad4e05
+modified: 1658087491650
+created: 1658066664529
+url: "{{ _.URI }}"
+name: Create credential
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"url":"{{ _.url }}",
+    	"username": "{% faker 'internet', '', '', '', '', '', '', '', '', '', '', '', '', '', 'userName', '', '', '', '', '', '', '', '', '', '', _.name, 'pt_BR' %}",
+    	"title": "{% faker 'internet', '', '', '', '', 'bs', '', '', '', '', '', '', '', '', 'domainName', 'text', '', '', 'firstName', '', '', '', '', '', '', _.url, 'pt_BR' %}",
+    	"password": "{% faker 'internet', '', '', '', '', '', '', '', '', '', '', '', '', '', 'password', '', '', '', '', '', '', '', '', '', '', '', 'pt_BR' %}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6c956207d64948dc9a83b0db1eb1cc4d
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1658066664529
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
