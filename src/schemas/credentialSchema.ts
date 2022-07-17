@@ -7,7 +7,9 @@ const bodySchema = Joi.object<CredentialBody>({
 	url: Joi.string().uri().required(),
 	username: Joi.string().required(),
 	password: Joi.string().required(),
-}).required()
+})
+	.required()
+	.options({ allowUnknown: false })
 
 const credentialSchema = Joi.object({
 	body: bodySchema,

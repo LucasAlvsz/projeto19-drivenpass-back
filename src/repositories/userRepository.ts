@@ -1,7 +1,7 @@
-import { UserData } from "@/interfaces/authInterfaces"
+import { SignUpData } from "@/interfaces/authInterfaces"
 import prisma from "@db/index"
 
-const insert = async (user: UserData) => {
+const insert = async (user: SignUpData) => {
 	return prisma.user.create({ data: user })
 }
 

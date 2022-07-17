@@ -5,13 +5,13 @@ import handleError from "@middlewares/handlerErrorMiddleware"
 
 import authRouter from "./authRouter"
 import credentialRouter from "./credentialsRouter"
-import notesRouter from "./notesRouter"
+import noteRouter from "./noteRouter"
 
 const router = Router()
 
 router.use(authRouter)
-router.use(notesRouter)
 router.use("/credential", credentialRouter)
+router.use("/note", noteRouter)
 router.use(handleError)
 
 export default router

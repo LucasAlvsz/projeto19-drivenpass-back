@@ -6,7 +6,9 @@ const bodySchema = Joi.object<SignUpBody>({
 	email: Joi.string().email().required(),
 	password: Joi.string().min(10).required(),
 	confirmPassword: Joi.string().valid(Joi.ref("password")).required(),
-}).required()
+})
+	.required()
+	.options({ allowUnknown: false })
 
 const signUpSchema = Joi.object({
 	body: bodySchema,
