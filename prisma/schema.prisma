@@ -26,8 +26,8 @@ model User {
 
 model Credential {
   id        Int      @id @default(autoincrement())
-  title     String   @unique
-  email     String
+  title     String
+  url       String
   username  String
   password  String
   createdAt DateTime @default(now())
@@ -41,7 +41,7 @@ model Credential {
 
 model Note {
   id        Int      @id @default(autoincrement())
-  title     String   @unique
+  title     String
   content   String
   createdAt DateTime @default(now())
   userId    Int
@@ -54,7 +54,7 @@ model Note {
 
 model Card {
   id         Int       @id @default(autoincrement())
-  title      String    @unique
+  title      String
   number     String
   holderName String
   cvv        String
@@ -80,7 +80,7 @@ enum CardTypes {
 
 model Wifi {
   id        Int      @id @default(autoincrement())
-  title     String   @unique //TODO make this unique or not
+  title     String
   name      String
   password  String
   createdAt DateTime @default(now())

@@ -12,7 +12,7 @@ const main = async () => {
 	const credentials = [
 		{
 			title: "Driven Hub",
-			email: "lucax@gmail.com",
+			url: "https://driven-hub.com",
 			username: "lucaxxx",
 			password: "123456",
 			userId: 1,

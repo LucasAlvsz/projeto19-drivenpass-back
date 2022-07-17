@@ -16,7 +16,7 @@ CREATE TABLE "users" (
 CREATE TABLE "credentials" (
     "id" SERIAL NOT NULL,
     "title" TEXT NOT NULL,
-    "email" TEXT NOT NULL,
+    "url" TEXT NOT NULL,
     "username" TEXT NOT NULL,
     "password" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -67,18 +67,6 @@ CREATE TABLE "wifis" (
 
 -- CreateIndex
 CREATE UNIQUE INDEX "users_email_key" ON "users"("email");
-
--- CreateIndex
-CREATE UNIQUE INDEX "credentials_title_key" ON "credentials"("title");
-
--- CreateIndex
-CREATE UNIQUE INDEX "notes_title_key" ON "notes"("title");
-
--- CreateIndex
-CREATE UNIQUE INDEX "cards_title_key" ON "cards"("title");
-
--- CreateIndex
-CREATE UNIQUE INDEX "wifis_title_key" ON "wifis"("title");
 
 -- AddForeignKey
 ALTER TABLE "credentials" ADD CONSTRAINT "credentials_userId_fkey" FOREIGN KEY ("userId") REFERENCES "users"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
