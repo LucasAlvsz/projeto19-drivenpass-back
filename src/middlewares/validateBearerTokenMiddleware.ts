@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express"
-import bearerAuthorizationSchema from "@/schemas/AuthorizationSchemas/bearerAuthorizationSchema"
+import bearerAuthorizationSchema from "@/schemas/AuthorizationTokenSchemas/bearerAuthorizationSchema"
 import { validateToken } from "@/utils/JWTUtils"
 
 const validateBearerToken = (
