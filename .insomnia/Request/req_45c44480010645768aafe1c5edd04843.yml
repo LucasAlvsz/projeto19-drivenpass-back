@@ -1,0 +1,32 @@
+_id: req_45c44480010645768aafe1c5edd04843
+type: Request
+parentId: fld_6b9cadcd6f6b44c3a4de2dc78dbfdf19
+modified: 1658085975757
+created: 1658081358738
+url: "{{ _.URI }}"
+name: Create note
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"title": "{% faker 'lorem', '', '', '', '', 'bs', '', '', '', '', '', '', '', '', 'domainName', 'words', '', '', 'firstName', '', '', '', '', '', 'adjective', '', 'pt_BR' %}",
+    	"content": "{% faker 'lorem', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'paragraph', '', '', '', '', '', '', '', '', '', '', 'pt_BR' %}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6c956207d64948dc9a83b0db1eb1cc4d
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1658066664529
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

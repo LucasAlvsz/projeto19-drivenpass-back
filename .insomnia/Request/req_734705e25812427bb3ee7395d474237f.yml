@@ -1,0 +1,32 @@
+_id: req_734705e25812427bb3ee7395d474237f
+type: Request
+parentId: fld_0c8f11ae25634000ba5257d964180df6
+modified: 1658066585547
+created: 1658065165623
+url: "{{ _.URI }}"
+name: Already registered
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "nomes",
+    	"email":"nomes@gmail.com",
+    	"password": "nomesnomes",
+    	"confirmPassword":"nomesnomes"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_1259b2c3d2ec4fc489ed173a374e68af
+authentication: {}
+metaSortKey: -1658063391828
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

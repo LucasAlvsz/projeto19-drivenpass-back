@@ -1,0 +1,25 @@
+_id: req_4dc07d19e58d4fba97f24ef6d7a18324
+type: Request
+parentId: fld_8517bbd6e6244e1f8c50134b3437c2f3
+modified: 1658089640698
+created: 1658089334853
+url: "{{ _.URI }}/{% response 'body', 'req_b83854cd20634041bf06d0005427b8cb',
+  'b64::JC5pZA==::46b', 'always', 60 %}"
+name: Wifi by id
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: -1658065012444.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,24 @@
+_id: req_1b497c2bbcc14c66a6f2d4e2b25a46e9
+type: Request
+parentId: fld_8517bbd6e6244e1f8c50134b3437c2f3
+modified: 1658091320990
+created: 1658089334915
+url: "{{ _.URI }}/4"
+name: Wifi by id
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: -1658064737063.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

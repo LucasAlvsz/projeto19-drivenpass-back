@@ -1,0 +1,24 @@
+_id: req_b40d76c322aa44e6944831e70eb95aa1
+type: Request
+parentId: fld_4a3c5a2313454576ab4a7e4a67ad4e05
+modified: 1658076229154
+created: 1658075525830
+url: "{{ _.URI }}/0"
+name: Invalid id
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: -1658064737113.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

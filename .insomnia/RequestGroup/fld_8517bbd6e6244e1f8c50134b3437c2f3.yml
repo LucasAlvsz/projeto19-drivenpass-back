@@ -1,0 +1,10 @@
+_id: fld_8517bbd6e6244e1f8c50134b3437c2f3
+type: RequestGroup
+parentId: wrk_9df102ac69084b56b19a0b6b4c62a106
+modified: 1658089334715
+created: 1658089334715
+name: /wifi
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1658062282478.5
