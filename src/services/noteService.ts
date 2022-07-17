@@ -6,7 +6,7 @@ import noteRepository from "@/repositories/noteRepository"
 const create = async (noteBody: NoteBody, userId: number) => {
 	const { title } = noteBody
 	const userNotes = await noteRepository.findByTitleAndUserId(title, userId)
-	if (userNotes) throw conflictError("Note already exists")
+	if (userNotes) throw conflictError(`${title} already exists`)
 	const noteData = {
 		...noteBody,
 		userId: userId,

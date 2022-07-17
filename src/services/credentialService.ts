@@ -9,7 +9,7 @@ const create = async (credentialBody: CredentialBody, userId: number) => {
 		title,
 		userId
 	)
-	if (userCredentials) throw conflictError("Credential already exists")
+	if (userCredentials) throw conflictError(`${title} already exists`)
 	const encryptedPassword = encrypt(credentialBody.password)
 	const credentialData = {
 		...credentialBody,
