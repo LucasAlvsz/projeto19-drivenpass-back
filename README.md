@@ -568,7 +568,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd projeto18-valex/
+  cd projeto19-drivenpass-back/
 ```
 
 Install dependencies
