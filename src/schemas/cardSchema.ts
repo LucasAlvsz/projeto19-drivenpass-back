@@ -12,7 +12,7 @@ const bodySchema: CardBody = Joi.object({
 	password: Joi.string().required(),
 	cvv: Joi.string().length(3).required(),
 	expiryDate: Joi.date().format("MM/YY").required(),
-	isVirtual: Joi.boolean().stric().required(),
+	isVirtual: Joi.boolean().strict().required(),
 	type: Joi.string().valid("credit", "debit", "credit_debit").required(),
 })
 	.required()
