@@ -192,7 +192,7 @@ DELETE /credential/${id}
 
 # Notes
 
-# Create a new note
+#### Create a new note
 
 ```http
 POST /note
