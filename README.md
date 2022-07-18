@@ -82,8 +82,6 @@ POST /signin
 
 <br/>
 
-# Authorization headers
-
 ### Authorization
 
 | Headers         | Type     | Description               |
@@ -265,7 +263,7 @@ GET /note
 
 #
 
-### Get a note by identifier
+#### Get a note by identifier
 
 ```http
 GET /note/${id}
@@ -292,7 +290,7 @@ GET /note/${id}
 
 #
 
-### Delete a note by identifier
+#### Delete a note by identifier
 
 ```http
 DELETE /note/${id}
@@ -308,7 +306,7 @@ DELETE /note/${id}
 
 # Cards
 
-# Create a new card
+#### Create a new card
 
 ```http
 POST /card
@@ -352,7 +350,7 @@ POST /card
 
 #
 
-### Get all cards associated with the user
+#### Get all cards associated with the user
 
 ```http
 GET /card
@@ -391,7 +389,7 @@ GET /card
 
 #
 
-### Get a card by identifier
+#### Get a card by identifier
 
 ```http
 GET /card/${id}
@@ -424,7 +422,7 @@ GET /card/${id}
 
 #
 
-### Delete a card by identifier
+#### Delete a card by identifier
 
 ```http
 DELETE /card/${id}
@@ -440,7 +438,7 @@ DELETE /card/${id}
 
 # Wifi
 
-# Create data from a new wifi network
+#### Create data from a new wifi network
 
 ```http
 POST /note
@@ -470,7 +468,7 @@ POST /note
 
 #
 
-### Get all networks associated with the user
+#### Get all networks associated with the user
 
 ```http
 GET /wifi
@@ -499,7 +497,7 @@ GET /wifi
 
 #
 
-### Get a network by identifier
+#### Get a network by identifier
 
 ```http
 GET /wifi/${id}
@@ -527,7 +525,7 @@ GET /wifi/${id}
 
 #
 
-### Delete a network by identifier
+#### Delete a network by identifier
 
 ```http
 DELETE /wifi/${id}
