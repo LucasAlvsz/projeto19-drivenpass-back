@@ -38,8 +38,6 @@ Drivenpass simulates a password manager. You can create an account and save your
 
 ## API Reference
 
-</br>
-
 #### SignUp
 
 ```http
@@ -206,7 +204,7 @@ DELETE /credential/${id}
 
 # Notes
 
-# Create a new note
+#### Create a new note
 
 ```http
 POST /note
