@@ -1,9 +1,9 @@
-import { SignInData, SignUpData } from "@/interfaces/authInterfaces"
+import { SignInData, SignUpBody } from "@/interfaces/authInterfaces"
 import authService from "@/services/authService"
 import { Request, Response } from "express"
 
 const signUp = async (req: Request, res: Response) => {
-	const signUpData: SignUpData = req.body
+	const signUpData: SignUpBody = req.body
 	await authService.signUp(signUpData)
 	res.sendStatus(201)
 }
