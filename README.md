@@ -38,8 +38,6 @@ Drivenpass simulates a password manager. You can create an account and save your
 
 ## API Reference
 
-</br>
-
 #### SignUp
 
 ```http
