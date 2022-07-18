@@ -94,6 +94,8 @@ POST /signin
 
 **All following routes request authorization header**
 
+<br/>
+
 # Credentials
 
 #### Create a new credential
