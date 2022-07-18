@@ -84,6 +84,18 @@ POST /signin
 
 <br/>
 
+# Authorization headers
+
+### Authorization
+
+| Headers         | Type     | Description               |
+| :-------------- | :------- | :------------------------ |
+| `Authorization` | `string` | **Required**. valid token |
+
+`Authorization format: Bearer jsonwebtoken`
+
+**All following routes request authorization header**
+
 # Credentials
 
 #### Create a new credential
