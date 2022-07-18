@@ -3,7 +3,7 @@
     "esModuleInterop": true,
     "module": "CommonJS",
     "moduleResolution": "node",
-    "outDir": "dist",
+    "outDir": "build",
 	"paths": {
 		"@/*": [
 			"./src/*"
