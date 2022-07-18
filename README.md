@@ -78,7 +78,7 @@ POST /signin
 
 ```json
 {
-	"token": "jasonwebtoken"
+	"token": "jsonwebtoken"
 }
 ```
 
