@@ -238,7 +238,7 @@ POST /note
 
 #
 
-### Get all notes associated with the user
+#### Get all notes associated with the user
 
 ```http
 GET /note
