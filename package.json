@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "ts-node -r tsconfig-paths/register -r dotenv/config ./src/index.ts",
+		"start": "ts-node -r tsconfig-paths/register ./src/index.ts",
 		"dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --watch package.json --exit-child --cls --rs -r tsconfig-paths/register -r dotenv/config src/index.ts"
 	},
 	"prisma": {
