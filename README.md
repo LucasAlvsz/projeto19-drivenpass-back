@@ -322,7 +322,7 @@ POST /card
 | `pass`       | `string`  | **Required**. card password        |
 | `cvv`        | `string`  | **Required**. card cvv             |
 | `expiryDate` | `string`  | **Required**. card expiration date |
-| `isVirtual`  | `boolean` | **Required**. card number          |
+| `isVirtual`  | `boolean` | **Required**. card either the card is virtual or not          |
 | `type`       | `string`  | **Required**. card type            |
 
 `Date format: MM/YY`
@@ -441,7 +441,7 @@ DELETE /card/${id}
 #### Create data from a new wifi network
 
 ```http
-POST /note
+POST /wifi
 ```
 
 #### Request:
