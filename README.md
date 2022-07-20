@@ -551,7 +551,7 @@ To run this project, you will need to add the following environment variables to
 
 `SECRET_KEY = any string`
 
-`JWT_SECRET = "any string`
+`JWT_SECRET = any string`
 
 </br>
 
