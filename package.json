@@ -4,8 +4,9 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "ts-node -r tsconfig-paths/register ./src/index.ts",
-		"dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --watch package.json --exit-child --cls --rs -r tsconfig-paths/register -r dotenv/config src/index.ts"
+		"start": "ts-node -r tsconfig-paths/register ./src/server.ts",
+		"test": "dotenv -e .env.test prisma migrate reset --force && dotenv -e .env.test jest --runInBandjest",
+		"dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --watch package.json --exit-child --cls --rs -r tsconfig-paths/register -r dotenv/config src/server.ts"
 	},
 	"prisma": {
 		"seed": "ts-node prisma/seed.ts"
@@ -24,17 +25,23 @@
 		"express-async-errors": "^3.1.1",
 		"joi": "^17.6.0",
 		"jsonwebtoken": "^8.5.1",
-		"tsconfig-paths": "^4.0.0",
-		"ts-node": "^10.9.1"
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.0.0"
 	},
 	"devDependencies": {
+		"@faker-js/faker": "^7.3.0",
 		"@types/bcrypt": "^5.0.0",
 		"@types/cors": "^2.8.12",
 		"@types/cryptr": "^4.0.1",
 		"@types/express": "^4.17.13",
+		"@types/jest": "^28.1.6",
 		"@types/jsonwebtoken": "^8.5.8",
+		"@types/supertest": "^2.0.12",
+		"dotenv-cli": "^6.0.0",
 		"nodemon": "^2.0.19",
 		"prisma": "^4.0.0",
+		"supertest": "^6.2.4",
+		"ts-jest": "^28.0.7",
 		"ts-node-dev": "^2.0.0",
 		"typescript": "^4.7.4"
 	}

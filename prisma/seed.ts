@@ -1,3 +1,4 @@
+import { encryptPassword } from "../src/utils/cryptographyUtils"
 import { PrismaClient } from "@prisma/client"
 const prisma = new PrismaClient()
 
@@ -6,7 +7,7 @@ const main = async () => {
 		{
 			name: "Lucax",
 			email: "lucax@gmail.com",
-			password: "123456",
+			password: encryptPassword("lucaxlucax"),
 		},
 	]
 	const credentials = [
