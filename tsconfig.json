@@ -1,38 +1,24 @@
 {
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "outDir": "build",
-	"paths": {
-		"@/*": [
-			"./src/*"
-		],
-		"@schemas/*": [
-			"./src/schemas/*"
-		],
-		"@db/*": [
-			"./src/db/*"
-		],
-		"@routes/*": [
-			"./src/routes/*"
-		],
-		"@middlewares/*": [
-			"./src/middlewares/*"
-		],
-		"@controllers/*": [
-			"./src/controllers/*"
-		],
-		"@services/*": [
-			"./src/services/*"
-		],
-		"@utils/*": [
-			"./src/utils/*"
-		]
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"outDir": "build",
+		"target": "ES2017",
+		"baseUrl": "./src/",
+		"paths": {
+			"@/*": ["*"],
+			"@schemas/*": ["schemas/*"],
+			"@db/*": ["db/*"],
+			"@routes/*": ["routes/*"],
+			"@middlewares/*": ["middlewares/*"],
+			"@controllers/*": ["controllers/*"],
+			"@services/*": ["services/*"],
+			"@utils/*": ["utils/*"]
+		}
 	},
-  },
-  "ts-node": {
-    "esm": true,
-  },
-
+	"ts-node": {
+		"esm": true
+	},
+	"include": ["src/**/*"]
 }
