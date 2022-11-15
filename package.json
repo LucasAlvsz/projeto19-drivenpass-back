@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "babel src --extensions '.js,.ts' --out-dir build --no-copy-ignored",
-		"start": "node build",
-		"dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --watch package.json --exit-child --cls --rs -r tsconfig-paths/register -r dotenv/config src/index.ts"
+		"start": "node build/server.js",
+		"dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --watch package.json --exit-child --cls --rs -r tsconfig-paths/register -r dotenv/config src/server.ts"
 	},
 	"prisma": {
 		"seed": "ts-node prisma/seed.ts"
